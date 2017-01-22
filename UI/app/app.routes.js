@@ -1,25 +1,19 @@
-﻿angular.module("app").config(function ($stateProvider, $urlRouterProvider) {
-
-    $stateProvider
-
-        // HOME STATES AND NESTED VIEWS ========================================
-        .state("home",
-        {
-            url: "/",
-            templateUrl: "../app/components/home/homeView.html",
-            controller: "homeController"
-        });
-
-    $urlRouterProvider.otherwise("/");
-
-    // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-    //.state("about",
-    //{
-    //    // we'll get to this in a bit       
-
-    //});
-
-    // catch all route
-    // send users to the form page 
-    // $urlRouterProvider.otherwise("home");
-});
+﻿angular.module("app")
+    .config(function($routeProvider, $locationProvider) {
+        $routeProvider
+            .when("/",
+            {                
+                templateUrl: "../app/components/home/homeView.html",
+                controller: "homeController  as homeCtrl"
+            })
+            .when("/about",
+            {
+                templateUrl: "../app/components/about/aboutView.html",
+                controller: "aboutController  as aboutCtrl"
+            })
+            .otherwise({
+                redirectTo: "/"
+            });;
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
+    });
