@@ -2,6 +2,6 @@
     .controller("homeController",
     [
         "$scope", function($scope) {
-            $scope.data = "Olaf";
+            // $scope.data = "Olaf";
         }
     ]);

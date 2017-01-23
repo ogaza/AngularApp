@@ -11,6 +11,11 @@
                 templateUrl: "../app/components/about/aboutView.html",
                 controller: "aboutController  as aboutCtrl"
             })
+            .when("/notes",
+            {
+                templateUrl: "../app/components/notes/notesView.html",
+                controller: "notesController  as notesCtrl"
+            })
             .otherwise({
                 redirectTo: "/"
             });;
