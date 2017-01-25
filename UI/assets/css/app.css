@@ -1,0 +1,155 @@
+
+/* *********************************************** */
+/* Comon */
+/* *********************************************** */
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+a{
+    color: rgb(66, 95, 156);
+}
+
+a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(106, 135, 196);
+    text-decoration: none;
+}
+
+.button {     
+    background: none;
+    border: none;
+    color: rgb(66, 95, 156);
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    padding: 0;
+}
+
+.button:hover{
+    color: rgb(106, 135, 196);
+}
+
+.margin-top-10{
+    margin: 10px 0 0;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 0 0 8px
+}
+
+h2{
+    font-size: 2em;
+}
+
+/* *********************************************** */
+/* Sticky footer */
+/* *********************************************** */
+
+.page-wrap {
+    background-color: rgb(240, 240, 240);
+    min-height: 100%;
+    /* equal to app-footer height */
+    margin-bottom: -50px; 
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+    /* equal to app-footer height */
+    height: 50px; 
+}
+
+/* *********************************************** */
+/* App Common */
+/* *********************************************** */
+
+.app-common {
+    margin: auto;
+    max-width: 800px;
+    padding: 5px;
+}
+
+.app-elem-wrap {
+    background-color: rgb(66, 95, 156);
+}
+
+/* *********************************************** */
+/* App Header */
+/* *********************************************** */
+
+.app-header{
+    background-color: rgb(66, 95, 156);
+    color: white; 
+}
+
+.app-header a{
+    color: white;
+}
+
+.app-header a:hover{
+    color: rgb(200, 200, 200);
+}
+
+.app-header .user-name{
+    display: inline;
+} 
+
+/* *********************************************** */
+/* App Nav */
+/* *********************************************** */
+
+.app-nav .menu-item {   
+    display: inline-block;
+    padding: 10px;
+}
+
+.app-nav .menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.app-nav .menu-item a:hover {
+    color: rgb(146, 175, 236);
+}
+
+/* *********************************************** */
+/* App Content */
+/* *********************************************** */
+
+.app-content{
+        
+}
+
+/* *********************************************** */
+/* App Footer */
+/* *********************************************** */
+
+.app-footer{
+    background-color: rgb(66, 95, 156);
+    color: white;
+    height: 50px;    
+    padding: 5px;
+}
