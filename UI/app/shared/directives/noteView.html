@@ -1,1 +1,14 @@
-﻿<div>Text: {{model.text}}</div>
+﻿<div class="post-container">
+    <ul>
+        <li class="post-content">
+            {{model.text}}
+        </li>
+        <li class="post-dateAdded">
+            {{model.dateAdded}}
+        </li>
+        <li class="post-links">
+            <a href="/notes/edit/{{model.id}}">Edit</a>
+            <a href="/notes/del/{{model.id}}">Delete</a>
+        </li>        
+    </ul>
+</div>
